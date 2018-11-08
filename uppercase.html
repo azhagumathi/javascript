@@ -1,0 +1,86 @@
+<script>
+function titleCase(str) {
+  
+let arr=str;
+ 
+ arr=arr.split(" ");
+ 
+ console.log(arr)
+ 
+ for(let i=0;i<arr.length;i++)
+ 
+ {
+     arr[i][0]=arr[i][0].toUpperCase();  
+ for(let j=1;j<arr[i].length;j++)
+  
+  {
+      arr[i][j]=arr[i][j].toLowerCase();
+    }
+
+  }
+ 
+ console.log(arr);
+
+ let arr1=[]
+  
+for(let i=0;i<arr.length;i++)
+
+  {
+    
+   
+    for(let j=1;j<arr[i].length;j++)
+    {
+    
+
+}
+}
+ 
+  str=arr.join(" ")
+ 
+ return str;
+}
+
+
+console.log(titleCase("I'm a little tea pot"));
+
+
+// JavaScript to illustrate sort() function 
+
+function func() { 
+
+	//Original string 
+	var arr = [2, 5, 8, 1, 4] 
+
+	//Sorting the array 
+	document.write(arr.sort()); 
+	document.write("<br>"); 
+	document.write(arr); 
+} 
+func(); 
+ 
+
+
+function getIndexToIns( num) 
+{
+   
+   
+var arr=[20,3,4,9]
+document.write(arr.sort())
+ 
+ for(let i=0;i<arr.length;i++)
+ 
+ {
+    if(arr[i]>=num)
+ 
+   {
+      arr.splice(i,0,num);
+ 
+ return i;
+      
+    }
+  }                                                                                            
+}
+
+console.log(getIndexToIns([5, 3, 20, 3], 5)); 
+
+</script>

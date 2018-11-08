@@ -1,0 +1,10 @@
+{"index.js":"
+function bouncer(arr) 
+{  for(let i=0;i<arr.length;i++){   
+ var a=Boolean(arr[i])  
+  if(a!=true)
+   {    
+  arr.splice(i,1) 
+     i--;   } }
+ return arr;}
+console.log(bouncer([7, \"ate\", \"\",9,false]));"}

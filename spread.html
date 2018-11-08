@@ -1,0 +1,97 @@
+<script>
+function copyMachine(arr, num) 
+{
+  let newArr = [];
+ 
+ while (num >= 1) {
+  
+  // change code below this line
+ 
+         newArr.push([...arr])
+   
+ // change code above this line
+  
+  num--;
+  }
+  
+return newArr;
+}
+
+
+
+// change code here to test different cases:
+
+console.log(copyMachine([true, false, true], 2));
+let arr=[true, false, true]
+arr.push([true,false])
+console.log(arr)
+
+function filteredArray(arr, elem) 
+{
+  let newArr = [];
+ 
+ let i=0;
+  let j=0;
+  let r=[]
+ 
+ // change code below this line
+ 
+  for (i=0; i<arr.length; i++)
+  
+{
+    for(j=0;j<arr[i].length; j++)
+  
+  {
+        if(arr[i][j]==elem)
+      
+  {
+  delete arr[i];
+   
+	break;
+   }
+  
+  }
+  }
+  // change code above this line
+ 
+ return arr;}
+// change code here to test different cases:
+
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+</script>
+<script>
+function filteredArray(arr, elem) {
+  let newArr = [];
+  let i=0;
+  let j=0;
+  // change code below this line
+  
+ 
+ // change code below this line
+ 
+  for (i=0; i<arr.length; i++)
+  
+{
+    for(j=0;j<arr[i].length; j++)
+  
+  {
+        if(arr[i][j]==elem)
+      
+  {
+        arr.splice(i,1)
+   
+	     break;
+   }
+  
+  }
+}
+  // change code above this line
+ 
+
+
+  // change code above this line
+  return arr;
+}
+// change code here to test different cases:
+console.log(filteredArray([ ["trumpets", 2], ["flutes", 4], ["saxophones", 2] ], 2));
+</script>

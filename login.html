@@ -1,0 +1,38 @@
+<html>
+<body>
+<form>
+<pre>
+NAME     : <input type="text" id="name"/>
+<BR/>
+PASSWORD : <input type="password" id="pass"/>
+<BR/>
+<button onclick="checker()">submit</button>
+<button onclick="checker1()">submit2</button>
+<script>
+let username='azhagu'
+let password='1234'
+let checker=function()
+{
+var mystring=document.getElementById("name").value;
+var pass=document.getElementById("pass").value;
+if(mystring==username&&pass==password)
+{
+alert("welcome  "+username)
+}
+else{
+alert("login failed")
+}
+}
+let checker1=function()
+{
+var mystring=document.getElementById("name").value;
+var pass=document.getElementById("pass").value;
+alert(mystring)
+}
+</script>
+</pre>
+</body>
+<body>
+hi
+</body>
+</html>

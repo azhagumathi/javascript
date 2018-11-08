@@ -1,0 +1,29 @@
+<script>
+function bouncer(arr) 
+{  
+for(let i=0;i<arr.length;i++)
+{ 
+  
+// var a=Boolean(arr[i])  
+ 
+ if(!(arr[i]&&true))
+   {    
+  
+   arr.splice(i,1) 
+    
+ i--;  
+      }
+    
+  else if(isNaN(arr[i]))
+ 
+     {
+         delete arr[i] 
+  
+       
+}
+     }
+ return arr;}
+
+
+console.log(bouncer("a", "b", "c"));
+</script>
