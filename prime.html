@@ -1,0 +1,26 @@
+<script>
+function sumPrimes(num)
+ {
+  let sum=0;
+ 
+ for(let i=2;i<=num;i++)
+  
+{
+    for(let j=2;j<=i;j++)
+ {
+   
+if(i%j==0)
+    {
+      continue;
+    }
+    else
+    {
+      sum=sum+i
+    }
+  }
+  }return sum;
+}
+
+console.log(
+sumPrimes(10));
+</script>

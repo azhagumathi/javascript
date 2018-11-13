@@ -1,0 +1,35 @@
+<script>
+function addTogether(...arg) {
+if(arg.length==2)
+{  if(Number.isInteger(arg[0])&&Number.isInteger(arg[1]))
+  {
+    
+    
+  return arg[0]+arg[1];
+  }
+  else{
+   return undefined;
+  }
+}
+if(arg.length==1)
+{
+  if(Number.isInteger(arg[0]))
+  {
+  return function(a)
+  {
+  if(Number.isInteger(a))
+    {
+    return arg[0]+a;
+    }
+  }
+  }
+  else
+  {
+    return undefined;
+  }
+  }
+  return false;
+}
+
+console.log(addTogether(2,3));
+</script>

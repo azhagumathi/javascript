@@ -1,0 +1,76 @@
+<script>
+// the global variable
+var globalTitle = " Winter Is  Coming ";
+
+function urlSlug(title) {
+    var s=""
+  for(let i=0;i<title.length;i++)
+
+  {
+        s+=title[i];
+  }  
+  
+
+  s=s.trim();
+  
+  
+s =s.split(" ");
+
+let n;
+  
+for(let i=0;i<s.length-1;i++)
+  {
+  
+if(s[i]=="")
+{
+ n=s.slice(0,i);
+ n.push(s.slice(i+1,))
+ console.log(n);
+s=n
+}
+
+
+ }
+ 
+s=n.join()
+ return s; 
+}
+
+
+var winterComing = urlSlug(globalTitle); 
+console.log(winterComing)
+</script>
+//  // Split on whitespace and underscores and join with dash
+
+// the global variable
+const globalTitle = " Winter Is  Coming ";
+
+// Add your code below this line
+function urlSlug(title) {
+    var s=title;
+   
+  
+  
+  s=s.trim();
+  s=s.toLowerCase()
+  s =s.split(" ");
+   console.log(s);
+let n=s;
+  for(let i=0;i<s.length;i++)
+  {
+   if(s[i]=="")
+   {
+   n=s.slice(0,i)
+   n.push(s.slice(i+1,))
+
+//s=n
+
+   
+   }
+        }
+var s=n.join("-");
+return s;
+}
+var winterComing = urlSlug(globalTitle);
+console.log(winterComing)
+console.log(globalTitle)

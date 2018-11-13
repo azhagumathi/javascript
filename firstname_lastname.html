@@ -1,0 +1,90 @@
+<script>
+//my solution
+var Person = function(firstAndLast) {
+  // Complete the method below and implement the others similarly
+//   let last=firstAndLast.split(" ");
+// console.log(last.length-1)
+  
+   // let lastname=fullName.splice(last.length-1,1,a)
+    
+  //console.log(last.slice(last.length-1,last.length))
+  this.getFullName = function() {
+
+    return firstAndLast;
+  };
+   this.getLastName = function() {
+     let last=firstAndLast.split(" ");
+
+    return last.slice(last.length-1,last.length);
+  };
+  this.getFirstName = function() {
+     let last=firstAndLast.split(" ");
+
+    return last.slice(0,last.length-1);
+  };
+this.setFullName = function(a) {
+
+  this.firstAndLast=a;
+    return firstAndLast;
+  
+  };
+   this.setLastName = function(a) {
+     let last=firstAndLast.split(" ");
+         last.splice(last.length-1,1,a)
+    
+    let lastname=last.slice(last.length-1,last.length)
+      console.log(last.length)
+    
+    return lastname;
+  
+    
+  };
+  this.setFirstName = function(a) {
+    let first=firstAndLast.split(" ");
+         first.splice(0,1,a)
+    
+    let firstname=first.slice(0,1)
+      console.log(first.length)
+    
+    return firstname;
+     
+    
+  };
+  
+};
+
+var bob = new Person('Bob Ross');
+console.log(bob.setFirstName("john")); 
+
+//provided sol
+var Person = function(firstAndLast) {
+  var fullName = firstAndLast;
+
+  this.getFirstName = function() {
+    return fullName.split(" ")[0];
+  };
+
+  this.getLastName = function() {
+    return fullName.split(" ")[1];
+  };
+
+  this.getFullName = function() {
+    return fullName;
+  };
+
+  this.setFirstName = function(name) {
+    fullName = name + " " + fullName.split(" ")[1];
+  };
+
+  this.setLastName = function(name) {
+    fullName = fullName.split(" ")[0] + " " + name;
+  };
+
+  this.setFullName = function(name) {
+    fullName = name;
+  };
+};
+
+var bob = new Person('Bob Ross');
+bob.getFullName()
+</script>

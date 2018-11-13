@@ -1,0 +1,30 @@
+<script>
+function fearNotLetter(str) {
+  let l=str.length;
+  let s=str.charCodeAt(0);
+  let e=str.charCodeAt(l-1);
+  console.log(l)
+  
+  if(e-s==l-1)
+  {
+    return undefined
+
+  }
+ for(let i=0;i<l;i++,s++)
+ {
+   if(str.charCodeAt(i)!=s)
+   {
+  console.log(String.fromCharCode(s))
+  console.log(i)
+   return String.fromCharCode(s)
+    // let t= str.substring(0,i)//i,0,String.fromCharCode(s))
+    // t+=String.fromCharCode(s);
+    // str=t+str.substring(i)
+    // return str;//to print the corrected string
+   }
+ }
+  
+}
+
+console.log(fearNotLetter("abce"));
+</script>

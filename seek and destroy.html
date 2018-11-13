@@ -1,0 +1,14 @@
+<script>
+    function destroyer(arr,...m) {
+ for(let i=0;i<m.length;i++)
+ {let ind=arr.indexOf(m[i])
+   while(ind>=0)
+   {
+     arr.splice(ind,1)
+     ind=arr.indexOf(m[i],ind)
+   }
+ }
+  return arr;
+}
+
+console.log(destroyer([3, 5, 1, 2, 2], 2 , 3, 5));
