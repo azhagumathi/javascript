@@ -1,0 +1,1 @@
+{"index.js":"function uniteUnique(arr,...a) {\n  for(let i=0;i<a.length;i++)\n  {\n    for(let j=0;j<a[i].length;j++)\n    {\n      if(arr.includes(a[i][j]))\n      {\n        continue;\n      }\n      else\n      {\n        arr.push(a[i][j])\n      }\n    }\n  }\n  \n  return arr;\n}\n\nconsole.log(uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]));"}

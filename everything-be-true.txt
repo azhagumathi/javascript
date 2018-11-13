@@ -1,0 +1,20 @@
+{"index.js":"function truthCheck(collection, pre) {\n\nvar l=collection.length;\nfor(let i=0;i<l;i++)\n{\n  if(collection[i].hasOwnProperty(pre))\n  {\n    if(collection[i][pre])\n    {\n    if(i==l-1)\n    {\n      return true;\n    }\n    continue\n  }\n  else\n  {\n    return false\n  }\n  }\n  else\n  {\n    return false;\n  }\n}\n  return pre;\n}\n\nconsole.log(truthCheck([{\"user\": \"Tinky-Winky\", \"sex\": \"male\", \"age\": 0}, {\"user\": \"Dipsy\", \"sex\": \"male\", \"age\": 3}, {\"user\": \"Laa-Laa\", \"sex\": \"female\", \"age\": 5}, {\"user\": \"Po\", \"sex\": \"female\", \"age\": 4}], \"age\"));"}
+
+//provided basic sol
+
+function truthCheck(collection, pre) {
+  // Create a counter to check how many are true.
+  var counter = 0;
+  // Check for each object
+  for (var c in collection) {
+    // If it is has property and value is truthy
+    if (collection[c].hasOwnProperty(pre) && Boolean(collection[c][pre])) {
+      counter++;
+    }
+  }
+
+nanin hambukae
+nain hambukae nanin haembukae nanin haembukae nanin haembukae nanin haembukae nanin haembukae nanin haembukae nanin haembukae nanin haembukae nanin haembukae nanin haembukae nanin haembukae nanin haembukae nanin  haembukae nanin haembukae nanin haembukaenanin haembukae nanin haembukae
+  // Outside the loop, check to see if we got true for all of them and return true or false
+  return counter == collection.length;
+}

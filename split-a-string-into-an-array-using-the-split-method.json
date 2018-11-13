@@ -1,0 +1,1 @@
+{"index.js":"function splitify(str) {\n  // Add your code below this line\n  \n  let n=str.split(/[^\\w]/gi)\n  return n\n  // Add your code above this line\n}\nconsole.log(splitify(\"Hello World,I-am code\"));"}
